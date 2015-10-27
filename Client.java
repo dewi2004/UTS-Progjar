@@ -19,7 +19,7 @@ public class Client1 {
     public static void main(String[] args) {
         
         try {
-	Socket sock = new Socket("localhost",6666);
+	Socket sock = new Socket("10.151.34.155",6666);
 	SendThread sendThread = new SendThread(sock);
 	
         Thread thread = new Thread(sendThread);thread.start();
